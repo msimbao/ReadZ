@@ -5,7 +5,12 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 
+import Tts from "react-native-tts";
+
 export default function HomeScreen() {
+
+  Tts.speak('Hello, world!');
+
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
@@ -49,6 +54,8 @@ export default function HomeScreen() {
     </ParallaxScrollView>
   );
 }
+
+
 
 const styles = StyleSheet.create({
   titleContainer: {
